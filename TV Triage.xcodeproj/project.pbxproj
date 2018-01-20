@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67972351CC33C265C5DCE151 /* Pods_TV_Triage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90535F936CB8F47FE7D5B2D /* Pods_TV_Triage.framework */; };
 		8231FAC72013E01D005687E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231FAC62013E01D005687E9 /* AppDelegate.swift */; };
 		8231FAC92013E01D005687E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231FAC82013E01D005687E9 /* ViewController.swift */; };
 		8231FACC2013E01D005687E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231FACA2013E01D005687E9 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68BCF0F90BF95005F99501B8 /* Pods-TV Triage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Triage.release.xcconfig"; path = "Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage.release.xcconfig"; sourceTree = "<group>"; };
 		8231FAC32013E01D005687E9 /* TV Triage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Triage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8231FAC62013E01D005687E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8231FAC82013E01D005687E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8231FACD2013E01D005687E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8231FAD02013E01D005687E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8231FAD22013E01D005687E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE44698B90AEC0C926EE4C1 /* Pods-TV Triage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Triage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage.debug.xcconfig"; sourceTree = "<group>"; };
+		E90535F936CB8F47FE7D5B2D /* Pods_TV_Triage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TV_Triage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67972351CC33C265C5DCE151 /* Pods_TV_Triage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EC0B3454176264F23575993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAE44698B90AEC0C926EE4C1 /* Pods-TV Triage.debug.xcconfig */,
+				68BCF0F90BF95005F99501B8 /* Pods-TV Triage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8231FABA2013E01D005687E9 = {
 			isa = PBXGroup;
 			children = (
 				8231FAC52013E01D005687E9 /* TV Triage */,
 				8231FAC42013E01D005687E9 /* Products */,
+				3EC0B3454176264F23575993 /* Pods */,
+				AAC37642E561472A666734A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "TV Triage";
 			sourceTree = "<group>";
 		};
+		AAC37642E561472A666734A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E90535F936CB8F47FE7D5B2D /* Pods_TV_Triage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8231FAD52013E01D005687E9 /* Build configuration list for PBXNativeTarget "TV Triage" */;
 			buildPhases = (
+				C52B7F7311E6502BDC5808BE /* [CP] Check Pods Manifest.lock */,
 				8231FABF2013E01D005687E9 /* Sources */,
 				8231FAC02013E01D005687E9 /* Frameworks */,
 				8231FAC12013E01D005687E9 /* Resources */,
+				F5FD4E89A6E8F0167EC1BBD9 /* [CP] Embed Pods Frameworks */,
+				28C2029013AF751AD1F46015 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28C2029013AF751AD1F46015 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52B7F7311E6502BDC5808BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5FD4E89A6E8F0167EC1BBD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8231FABF2013E01D005687E9 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		8231FAD62013E01D005687E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE44698B90AEC0C926EE4C1 /* Pods-TV Triage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		8231FAD72013E01D005687E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BCF0F90BF95005F99501B8 /* Pods-TV Triage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
