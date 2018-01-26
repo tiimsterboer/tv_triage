@@ -41,38 +41,40 @@
                                     <constraint firstAttribute="height" constant="50" id="cRk-tm-nED"/>
                                 </constraints>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="onSearchEntered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ipr-CR-vlv"/>
                                 </connections>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z4-Oa-e1A">
-                                <rect key="frame" x="16" y="173" width="343" height="474"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i0P-EU-gr9">
+                                <rect key="frame" x="42" y="254" width="229" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="G9b-dg-vkt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="5xA-mh-OUX"/>
                             <constraint firstItem="W3p-9S-v9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8OU-zs-Zo8"/>
-                            <constraint firstItem="7Z4-Oa-e1A" firstAttribute="top" secondItem="W8D-3x-nYo" secondAttribute="bottom" constant="8" id="B42-RC-bjc"/>
                             <constraint firstItem="W8D-3x-nYo" firstAttribute="top" secondItem="G9b-dg-vkt" secondAttribute="bottom" constant="30" id="BYi-L7-va8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Z4-Oa-e1A" secondAttribute="bottom" constant="20" id="GGu-mr-Qax"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Z4-Oa-e1A" secondAttribute="trailing" constant="16" id="Rpb-Mh-hsY"/>
+                            <constraint firstItem="i0P-EU-gr9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="Zjg-oX-bMm"/>
+                            <constraint firstItem="i0P-EU-gr9" firstAttribute="top" secondItem="W8D-3x-nYo" secondAttribute="bottom" constant="89" id="d54-yh-Lc3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W3p-9S-v9E" secondAttribute="bottom" id="dfw-lz-nXr"/>
                             <constraint firstItem="W3p-9S-v9E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f6g-uV-IHh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W3p-9S-v9E" secondAttribute="trailing" id="guo-5a-6ci"/>
-                            <constraint firstItem="7Z4-Oa-e1A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ijY-Xp-IzA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i0P-EU-gr9" secondAttribute="bottom" constant="237" id="oAo-Pq-hZB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W8D-3x-nYo" secondAttribute="trailing" constant="70" id="qxl-6V-RC0"/>
                             <constraint firstItem="G9b-dg-vkt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t1F-99-0AJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i0P-EU-gr9" secondAttribute="trailing" constant="104" id="wn1-bm-Inv"/>
                             <constraint firstItem="W8D-3x-nYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="yyo-mh-8ad"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="searchResults" destination="7Z4-Oa-e1A" id="ral-He-SZm"/>
+                        <outlet property="resultsDisplay" destination="i0P-EU-gr9" id="TUg-6o-UcZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,15 +12,15 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    @IBAction func onSearchEntered(_ sender: Any) {
-    }
-    @IBOutlet weak var searchResults: UILabel!
+   
     
+    @IBOutlet weak var resultsDisplay: UITextView!
     
     
     var shows = [TV]()
     
     var searchtext = ""
+    var output = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +35,12 @@ class ViewController: UIViewController {
                 self.shows = try JSONDecoder().decode([TV].self, from: result!)
                 for show in self.shows {
                     print(show.name,":",show.type,":",show.language)
-                    
+                    self.resultsDisplay.text = String(stringInterpolation: show.name,":",show.type,":",show.language)
                 }
             }catch {
                 print("error")
             }
-            
+        
         }
     }
 
