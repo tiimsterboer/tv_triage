@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		67972351CC33C265C5DCE151 /* Pods_TV_Triage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90535F936CB8F47FE7D5B2D /* Pods_TV_Triage.framework */; };
+		821D16D42016AA3A009EACBF /* WebRequest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821D16D32016AA3A009EACBF /* WebRequest1.swift */; };
 		8231FAC72013E01D005687E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231FAC62013E01D005687E9 /* AppDelegate.swift */; };
 		8231FAC92013E01D005687E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231FAC82013E01D005687E9 /* ViewController.swift */; };
 		8231FACC2013E01D005687E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231FACA2013E01D005687E9 /* Main.storyboard */; };
-		8231FACE2013E01D005687E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8231FACD2013E01D005687E9 /* Assets.xcassets */; };
 		8231FAD12013E01D005687E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231FACF2013E01D005687E9 /* LaunchScreen.storyboard */; };
+		82588642201AB4C70095A4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82588641201AB4C70095A4A8 /* Assets.xcassets */; };
+		82588645201AC7770095A4A8 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82588644201AC7770095A4A8 /* SearchField.swift */; };
+		82588647201AC84B0095A4A8 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82588646201AC84B0095A4A8 /* TV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68BCF0F90BF95005F99501B8 /* Pods-TV Triage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Triage.release.xcconfig"; path = "Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage.release.xcconfig"; sourceTree = "<group>"; };
+		821D16D32016AA3A009EACBF /* WebRequest1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequest1.swift; sourceTree = "<group>"; };
 		8231FAC32013E01D005687E9 /* TV Triage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Triage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8231FAC62013E01D005687E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8231FAC82013E01D005687E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8231FACB2013E01D005687E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8231FACD2013E01D005687E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8231FAD02013E01D005687E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8231FAD22013E01D005687E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82588641201AB4C70095A4A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82588644201AC7770095A4A8 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		82588646201AC84B0095A4A8 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		BAE44698B90AEC0C926EE4C1 /* Pods-TV Triage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Triage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage.debug.xcconfig"; sourceTree = "<group>"; };
 		E90535F936CB8F47FE7D5B2D /* Pods_TV_Triage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TV_Triage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -49,9 +55,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		821D16D22016AA0C009EACBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				821D16D32016AA3A009EACBF /* WebRequest1.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8231FABA2013E01D005687E9 = {
 			isa = PBXGroup;
 			children = (
+				82588643201AC75A0095A4A8 /* Model */,
+				821D16D22016AA0C009EACBF /* Services */,
 				8231FAC52013E01D005687E9 /* TV Triage */,
 				8231FAC42013E01D005687E9 /* Products */,
 				3EC0B3454176264F23575993 /* Pods */,
@@ -73,11 +89,20 @@
 				8231FAC62013E01D005687E9 /* AppDelegate.swift */,
 				8231FAC82013E01D005687E9 /* ViewController.swift */,
 				8231FACA2013E01D005687E9 /* Main.storyboard */,
-				8231FACD2013E01D005687E9 /* Assets.xcassets */,
+				82588641201AB4C70095A4A8 /* Assets.xcassets */,
 				8231FACF2013E01D005687E9 /* LaunchScreen.storyboard */,
 				8231FAD22013E01D005687E9 /* Info.plist */,
 			);
 			path = "TV Triage";
+			sourceTree = "<group>";
+		};
+		82588643201AC75A0095A4A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82588644201AC7770095A4A8 /* SearchField.swift */,
+				82588646201AC84B0095A4A8 /* TV.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AAC37642E561472A666734A6 /* Frameworks */ = {
@@ -151,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8231FAD12013E01D005687E9 /* LaunchScreen.storyboard in Resources */,
-				8231FACE2013E01D005687E9 /* Assets.xcassets in Resources */,
+				82588642201AB4C70095A4A8 /* Assets.xcassets in Resources */,
 				8231FACC2013E01D005687E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +238,9 @@
 			files = (
 				8231FAC92013E01D005687E9 /* ViewController.swift in Sources */,
 				8231FAC72013E01D005687E9 /* AppDelegate.swift in Sources */,
+				82588645201AC7770095A4A8 /* SearchField.swift in Sources */,
+				82588647201AC84B0095A4A8 /* TV.swift in Sources */,
+				821D16D42016AA3A009EACBF /* WebRequest1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
