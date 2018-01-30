@@ -27,15 +27,16 @@ class ViewController: UIViewController {
         
       //  searchtext = SearchField()
        
-        let url = URL(string: "https://api.tvmaze.com/shows")
+        let url = URL(string: "https://api.tvmaze.com/shows?q=girls")
         Alamofire.request(url!).responseJSON { (response) in
             
             let result = response.data
+            self.resultsDisplay.text = ""
             do {
                 self.shows = try JSONDecoder().decode([TV].self, from: result!)
                 for show in self.shows {
                     print(show.name,":",show.type,":",show.language)
-                    self.resultsDisplay.text = String(stringInterpolation: show.name,":",show.type,":",show.language)
+                    self.resultsDisplay.text = String(stringInterpolation: self.resultsDisplay.text, "\n" , show.name,":",show.type,":",show.language)
                 }
             }catch {
                 print("error")
