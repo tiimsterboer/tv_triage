@@ -16,6 +16,7 @@
 		82588642201AB4C70095A4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82588641201AB4C70095A4A8 /* Assets.xcassets */; };
 		82588645201AC7770095A4A8 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82588644201AC7770095A4A8 /* SearchField.swift */; };
 		82588647201AC84B0095A4A8 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82588646201AC84B0095A4A8 /* TV.swift */; };
+		82F73B7620228D660088A2A0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82F73B7420228D660088A2A0 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		82588641201AB4C70095A4A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82588644201AC7770095A4A8 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		82588646201AC84B0095A4A8 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
+		82F73B7520228D660088A2A0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BAE44698B90AEC0C926EE4C1 /* Pods-TV Triage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Triage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TV Triage/Pods-TV Triage.debug.xcconfig"; sourceTree = "<group>"; };
 		E90535F936CB8F47FE7D5B2D /* Pods_TV_Triage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TV_Triage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				8231FAC82013E01D005687E9 /* ViewController.swift */,
 				8231FACA2013E01D005687E9 /* Main.storyboard */,
 				82588641201AB4C70095A4A8 /* Assets.xcassets */,
+				82F73B7420228D660088A2A0 /* Model.xcdatamodeld */,
 				8231FACF2013E01D005687E9 /* LaunchScreen.storyboard */,
 				8231FAD22013E01D005687E9 /* Info.plist */,
 			);
@@ -241,6 +244,7 @@
 				82588645201AC7770095A4A8 /* SearchField.swift in Sources */,
 				82588647201AC84B0095A4A8 /* TV.swift in Sources */,
 				821D16D42016AA3A009EACBF /* WebRequest1.swift in Sources */,
+				82F73B7620228D660088A2A0 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +431,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82F73B7420228D660088A2A0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82F73B7520228D660088A2A0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 82F73B7520228D660088A2A0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8231FABB2013E01D005687E9 /* Project object */;
 }
