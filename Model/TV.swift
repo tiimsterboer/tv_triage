@@ -12,5 +12,5 @@ struct TV:Decodable {
     let name: String
     let type: String
     let language: String
-    
+    let summary: String
 }

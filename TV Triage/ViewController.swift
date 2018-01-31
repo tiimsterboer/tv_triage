@@ -36,7 +36,7 @@ class ViewController: UIViewController {
                 self.shows = try JSONDecoder().decode([TV].self, from: result!)
                 for show in self.shows {
                     print(show.name,":",show.type,":",show.language)
-                    self.resultsDisplay.text = String(stringInterpolation: self.resultsDisplay.text, "\n" , show.name,":",show.type,":",show.language)
+                    self.resultsDisplay.text = String(stringInterpolation: self.resultsDisplay.text, "\n" , show.name,":",show.type,":",show.language,":",show.summary)
                 }
             }catch {
                 print("error")
