@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
       //  searchtext = SearchField()
        
-        let url = URL(string: "https://api.tvmaze.com/shows?q=girls")
+        let url = URL(string: "https://api.tvmaze.com/shows")
         Alamofire.request(url!).responseJSON { (response) in
             
             let result = response.data
